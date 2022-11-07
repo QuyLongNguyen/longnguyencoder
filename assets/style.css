@@ -592,6 +592,7 @@ img {
       .single-blog-area .single-blog-content h4 a {
         margin-bottom: 20px; } }
   .single-blog-area .single-blog-content > p {
+    text-align: justify;
     line-height: 2;
     margin-bottom: 70px; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
