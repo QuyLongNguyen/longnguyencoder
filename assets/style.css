@@ -43,12 +43,12 @@ h5,
 h6 {
   color: #000000;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.4;
   font-family: "helveticaneuemedium"; }
 
 p {
   color: #0d0d0d;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   font-family: "helveticaneuemedium"; }
 
@@ -144,7 +144,11 @@ ol {
   margin: 0; }
   ul li,
   ol li {
-    list-style: none; }
+    list-style-type: unset;
+    color: #0d0d0d;
+    font-size: 16px;
+    font-family: "helveticaneuemedium"; 
+  }
 
 img {
   height: auto;
@@ -578,7 +582,10 @@ img {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 10px;
-    display: block; }
+    display: inline-block; 
+    background-color: #f1f1f1;
+    padding: 1px;
+    border-radius: 5px;}
     .single-blog-area .single-blog-content .post-tag:hover, .single-blog-area .single-blog-content .post-tag:focus {
       color: #000000; }
   .single-blog-area .single-blog-content h4 a {

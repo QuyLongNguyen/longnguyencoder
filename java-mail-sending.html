@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Nguyen Coder | Hướng dẫn gửi mail với Mailjet API</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/core-img/favicon.ico">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/assets/style.css">
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="original-load"></div>
+        </div>
+    </div>
+
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area" id="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Breaking News Area -->
+                    <div class="col-12 col-sm-8">
+                        <div class="breaking-news-area">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">Long Nguyen Coder</a></li>
+                                    <li><a href="#">More sharing, more gaining!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Top Social Area -->
+                    <div class="col-12 col-sm-4">
+                        <div class="top-social-area">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo Area -->
+        <div class="logo-area text-center">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <a href="index.html" class="original-logo"><img src="/assets/img/core-img/logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav Area -->
+        <div class="original-nav-area" id="stickyNav">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-end">
+
+                        <!-- Menu -->
+                        <div class="classy-menu" id="originalNav">
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#">Programming</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">OOP</a></li>
+                                            <li><a href="#">Java</a></li>
+                                            <li><a href="#">JavaScript </a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Database</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">SQL</a></li>
+                                            <li><a href="#">NoSQL</a></li>
+                                            <li><a href="#">Database Design</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#">Others</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">IT stories</a></li>
+                                            <li><a href="#">Life stories</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="about-me.html">About Us</a></li>
+
+                                </ul>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Single Blog Area Start ##### -->
+    <div class="single-blog-wrapper section-padding-0-100">
+
+        
+        <div class="container">
+            <div class="row">
+                <!-- ##### Post Content Area ##### -->
+                <div class="col-12 col-lg-12">
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50">
+                        <!-- Blog Content -->
+                        <div class="single-blog-content">
+                            <div class="line"></div>
+                            <a href="#" class="post-tag">Java</a>
+                            
+                        
+                            <h1 class="post-headline mb-0 h1">Hướng dẫn gửi mail với Mailjet API</h1>
+                            <p><small>13/02/2023</small></p>
+                            <div class="post-meta mb-50">
+                                <p>By <a href="#">Long Nguyen</a></p>
+                            </div>
+                            <p><b>Mailjet là một trong những dịch vụ gửi email và sms phổ biến, với trình quản lý email và các tính năng mạnh mẽ, Mailjet giúp cho việc gửi email trở nên đơn giản hơn bao giờ hết. Trong bài viết này, mình sẽ cùng thực hiện việc gửi mail với Mailjet.</b> </p>
+                           
+                            <h2>1. Cách đăng ký Mailjet </h2>
+                            <p>Việc đăng ký Mailjet vô cùng đơn giản, bạn chỉ cần sử dụng một email là đủ. Mailjet không yêu cầu thông tin về số điện thoại hay thẻ tín dụng.</p>
+
+                            <p>Để đăng ký, truy cập tới màn hình đăng tý tại đây. Nhập tên tài khoản là một email đã xác thực và mật khẩu muốn đặt cho tài khoản.</p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-75">
+                                    <img src="assets/img/mailjet/mailjet-home.png"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">Mailjet home
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <p> Sau đó, bấm tiếp tục và nhập những thông tin theo yêu cầu. Đồng thời, bạn có thể chọn gói dịch vụ sẽ sử dụng bằng cách chọn Change plan trong mục Your plan. Mặc định, Mailjet sẽ cung cấp gói miễn phí, cho phép gửi 200 emails/ngày tương đương 6000 emails/tháng.</p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-75">
+                                    <img src="assets/img/mailjet/profile.png"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">Profile Form
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <p>Tiếp tục chọn Next cho tới khi điền thông tin hoàn tất . Lúc này, Mailjet sẽ gửi một confirmation tới hòm thư của email mà mình sử dụng để đăng ký tài khoản.</p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/mailjet/register-confirm.png"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">Registration Confirm
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <p>Trong hộp thư đến của hòm thư, tìm tới mail và Mailjet đã gửi, nhấn vào Active Your Account để kích hoạt tài khoản, hoàn tất quá trình đăng ký.</p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/mailjet/confirm-mail.jpeg"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">Confirmation Mail
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <p>Sau khi nhấn kích hoạt, Mailjet sẽ tự động kích hoạt tài khoản và điều hướng về trang dashboard của mailjet. Lúc này, việc đăng ký tài khoản đã thành công. </p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-75">
+                                    <img src="assets/img/mailjet/dashboard.png"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">Dashboard
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <h2>2. Sử dụng dịch vụ gửi mail của Mailjet API </h2>
+                            <p>Để có thể sử dụng Mailject API, bước đầu tiên ta cần lấy được Api Key và Secret Key để ứng dụng của mình có thể gọi tới API. Để có thể lấy được key, tại mục Account Settings, chọn Api Key Managemnent.</p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/mailjet/account-settings.jpeg"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">API Managemnent
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <p>Danh sách các Key sẽ được hiển thị trong API Managment, mặc định sẽ có một API Key tạo sẵn cho Primary Account. Để tạo Secret Key, chọn Generate Secret Key. Secret Key chỉ hiện một lần sau khi tạo, vì vậy hãy lưu lại, nếu không ta sẽ cần reset để tạo lại một Secret Key khác.</p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/mailjet/sercret-key.png"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">Secret Key pop-up
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <p>Sau khi tạo key thành công, lúc này ta có thể gọi tới Mailjet API trong ứng dụng của mình. Cách thức sử dụng  Mailjet API được mô tả chi tiết trong API Document. Cụ thể là Send API đối với việc gửi mail. </p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/mailjet/api.jpg"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">API Document 
+                                    </figcaption>
+                                </figure>                          
+                            </div>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-75">
+                                    <img src="assets/img/mailjet/mail-api.png"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">Send API Document
+                                    </figcaption>
+                                </figure>    
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- About Author -->
+                    <div class="blog-post-author mt-100 d-flex">
+                        <div class="author-thumbnail">
+                            <img src="/assets/img/bg-img/b6.jpg" alt="">
+                        </div>
+                        <div class="author-info">
+                            <div class="line"></div>
+                            <span class="author-role">Author</span>
+                            <h4><a href="#" class="author-name">James Morrison</a></h4>
+                            <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam
+                                vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel
+                                volutpat quam tincidunt. Nullam vestibulum convallis risus vel condimentum. Nullam
+                                auctor lorem in libero.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ##### Single Blog Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area text-center border-top bg-light">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12 ">
+
+                    <!-- Footer Nav Area -->
+                    <div class="classy-nav-container breakpoint-off bg-light">
+                        <!-- Classy Menu -->
+                        <nav class="classy-navbar justify-content-center">
+
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
+                            </div>
+
+                            <!-- Menu -->
+                            <div class="classy-menu">
+
+                                <!-- close btn -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Me</a></li>
+
+                                    </ul>
+                                </div>
+                                <!-- Nav End -->
+                            </div>
+                        </nav>
+                    </div>
+
+                    <!-- Footer Social Area -->
+                    <div class="footer-social-area mt-30">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
+                                class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Github"><i class="fa fa-github"
+                                aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i
+                                class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script> All rights reserved |
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="/assets/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="/assets/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="/assets/js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="/assets/js/active.js"></script>
+</body>
+</html>
