@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="/assets/style.css">
 
 </head>
+
 <body>
     <!-- Preloader -->
     <div id="preloader">
@@ -122,7 +124,7 @@
     <!-- ##### Single Blog Area Start ##### -->
     <div class="single-blog-wrapper section-padding-0-100">
 
-        
+
         <div class="container">
             <div class="row">
                 <!-- ##### Post Content Area ##### -->
@@ -133,37 +135,46 @@
                         <div class="single-blog-content">
                             <div class="line"></div>
                             <a href="#" class="post-tag">Java</a>
-                            
-                        
+
+
                             <h1 class="post-headline mb-0 h1">Hướng dẫn gửi mail với Mailjet API</h1>
                             <p><small>13/02/2023</small></p>
                             <div class="post-meta mb-50">
                                 <p>By <a href="#">Long Nguyen</a></p>
                             </div>
-                            <p><b>Mailjet là một trong những dịch vụ gửi email và sms phổ biến, với trình quản lý email và các tính năng mạnh mẽ, Mailjet giúp cho việc gửi email trở nên đơn giản hơn bao giờ hết. Trong bài viết này, mình sẽ cùng thực hiện việc gửi mail với Mailjet.</b> </p>
-                           
-                            <h2>1. Cách đăng ký Mailjet </h2>
-                            <p>Việc đăng ký Mailjet vô cùng đơn giản, bạn chỉ cần sử dụng một email là đủ. Mailjet không yêu cầu thông tin về số điện thoại hay thẻ tín dụng.</p>
+                            <p><b>Mailjet là một trong những dịch vụ gửi email và sms phổ biến, với trình quản lý email
+                                    và các tính năng mạnh mẽ, Mailjet giúp cho việc gửi email trở nên đơn giản hơn bao
+                                    giờ hết. Trong bài viết này, mình sẽ cùng thực hiện việc gửi mail với Mailjet.</b>
+                            </p>
 
-                            <p>Để đăng ký, truy cập tới màn hình đăng tý tại đây. Nhập tên tài khoản là một email đã xác thực và mật khẩu muốn đặt cho tài khoản.</p>
+                            <h2>1. Cách đăng ký Mailjet </h2>
+                            <p>Việc đăng ký Mailjet vô cùng đơn giản, bạn chỉ cần sử dụng một email là đủ. Mailjet không
+                                yêu cầu thông tin về số điện thoại hay thẻ tín dụng.</p>
+
+                            <p>Để đăng ký, truy cập tới màn hình đăng tý tại đây. Nhập tên tài khoản là một email đã xác
+                                thực và mật khẩu muốn đặt cho tài khoản.</p>
                             <div class="row justify-content-center text-center">
                                 <figure class="figure w-75">
-                                    <img src="assets/img/mailjet/mailjet-home.png"
-                                        class="figure-img img-fluid rounded" alt="...">
+                                    <img src="assets/img/mailjet/mailjet-home.png" class="figure-img img-fluid rounded"
+                                        alt="...">
                                     <figcaption class="figure-caption">Mailjet home
                                     </figcaption>
                                 </figure>
                             </div>
-                            <p> Sau đó, bấm tiếp tục và nhập những thông tin theo yêu cầu. Đồng thời, bạn có thể chọn gói dịch vụ sẽ sử dụng bằng cách chọn Change plan trong mục Your plan. Mặc định, Mailjet sẽ cung cấp gói miễn phí, cho phép gửi 200 emails/ngày tương đương 6000 emails/tháng.</p>
+                            <p> Sau đó, bấm tiếp tục và nhập những thông tin theo yêu cầu. Đồng thời, bạn có thể chọn
+                                gói dịch vụ sẽ sử dụng bằng cách chọn Change plan trong mục Your plan. Mặc định, Mailjet
+                                sẽ cung cấp gói miễn phí, cho phép gửi 200 emails/ngày tương đương 6000 emails/tháng.
+                            </p>
                             <div class="row justify-content-center text-center">
                                 <figure class="figure w-75">
-                                    <img src="assets/img/mailjet/profile.png"
-                                        class="figure-img img-fluid rounded" alt="...">
+                                    <img src="assets/img/mailjet/profile.png" class="figure-img img-fluid rounded"
+                                        alt="...">
                                     <figcaption class="figure-caption">Profile Form
                                     </figcaption>
                                 </figure>
                             </div>
-                            <p>Tiếp tục chọn Next cho tới khi điền thông tin hoàn tất . Lúc này, Mailjet sẽ gửi một confirmation tới hòm thư của email mà mình sử dụng để đăng ký tài khoản.</p>
+                            <p>Tiếp tục chọn Next cho tới khi điền thông tin hoàn tất . Lúc này, Mailjet sẽ gửi một
+                                confirmation tới hòm thư của email mà mình sử dụng để đăng ký tài khoản.</p>
                             <div class="row justify-content-center text-center">
                                 <figure class="figure w-50">
                                     <img src="assets/img/mailjet/register-confirm.png"
@@ -172,26 +183,30 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                            <p>Trong hộp thư đến của hòm thư, tìm tới mail và Mailjet đã gửi, nhấn vào Active Your Account để kích hoạt tài khoản, hoàn tất quá trình đăng ký.</p>
+                            <p>Trong hộp thư đến của hòm thư, tìm tới mail và Mailjet đã gửi, nhấn vào Active Your
+                                Account để kích hoạt tài khoản, hoàn tất quá trình đăng ký.</p>
                             <div class="row justify-content-center text-center">
                                 <figure class="figure w-50">
-                                    <img src="assets/img/mailjet/confirm-mail.jpeg"
-                                        class="figure-img img-fluid rounded" alt="...">
+                                    <img src="assets/img/mailjet/confirm-mail.jpeg" class="figure-img img-fluid rounded"
+                                        alt="...">
                                     <figcaption class="figure-caption">Confirmation Mail
                                     </figcaption>
                                 </figure>
                             </div>
-                            <p>Sau khi nhấn kích hoạt, Mailjet sẽ tự động kích hoạt tài khoản và điều hướng về trang dashboard của mailjet. Lúc này, việc đăng ký tài khoản đã thành công. </p>
+                            <p>Sau khi nhấn kích hoạt, Mailjet sẽ tự động kích hoạt tài khoản và điều hướng về trang
+                                dashboard của mailjet. Lúc này, việc đăng ký tài khoản đã thành công. </p>
                             <div class="row justify-content-center text-center">
                                 <figure class="figure w-75">
-                                    <img src="assets/img/mailjet/dashboard.png"
-                                        class="figure-img img-fluid rounded" alt="...">
+                                    <img src="assets/img/mailjet/dashboard.png" class="figure-img img-fluid rounded"
+                                        alt="...">
                                     <figcaption class="figure-caption">Dashboard
                                     </figcaption>
                                 </figure>
                             </div>
                             <h2>2. Sử dụng dịch vụ gửi mail của Mailjet API </h2>
-                            <p>Để có thể sử dụng Mailject API, bước đầu tiên ta cần lấy được Api Key và Secret Key để ứng dụng của mình có thể gọi tới API. Để có thể lấy được key, tại mục Account Settings, chọn Api Key Managemnent.</p>
+                            <p>Để có thể sử dụng Mailject API, bước đầu tiên ta cần lấy được Api Key và Secret Key để
+                                ứng dụng của mình có thể gọi tới API. Để có thể lấy được key, tại mục Account Settings,
+                                chọn Api Key Managemnent.</p>
                             <div class="row justify-content-center text-center">
                                 <figure class="figure w-50">
                                     <img src="assets/img/mailjet/account-settings.jpeg"
@@ -200,37 +215,384 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                            <p>Danh sách các Key sẽ được hiển thị trong API Managment, mặc định sẽ có một API Key tạo sẵn cho Primary Account. Để tạo Secret Key, chọn Generate Secret Key. Secret Key chỉ hiện một lần sau khi tạo, vì vậy hãy lưu lại, nếu không ta sẽ cần reset để tạo lại một Secret Key khác.</p>
+                            <p>Danh sách các Key sẽ được hiển thị trong API Managment, mặc định sẽ có một API Key tạo
+                                sẵn cho Primary Account. Để tạo Secret Key, chọn Generate Secret Key. Secret Key chỉ
+                                hiện một lần sau khi tạo, vì vậy hãy lưu lại, nếu không ta sẽ cần reset để tạo lại một
+                                Secret Key khác.</p>
                             <div class="row justify-content-center text-center">
                                 <figure class="figure w-50">
-                                    <img src="assets/img/mailjet/sercret-key.png"
-                                        class="figure-img img-fluid rounded" alt="...">
+                                    <img src="assets/img/mailjet/sercret-key.png" class="figure-img img-fluid rounded"
+                                        alt="...">
                                     <figcaption class="figure-caption">Secret Key pop-up
                                     </figcaption>
                                 </figure>
                             </div>
-                            <p>Sau khi tạo key thành công, lúc này ta có thể gọi tới Mailjet API trong ứng dụng của mình. Cách thức sử dụng  Mailjet API được mô tả chi tiết trong API Document. Cụ thể là Send API đối với việc gửi mail. </p>
+                            <p>Sau khi tạo key thành công, lúc này ta có thể gọi tới Mailjet API trong ứng dụng của
+                                mình. Cách thức sử dụng Mailjet API được mô tả chi tiết trong API Document. Cụ thể là
+                                Send API đối với việc gửi mail. Ở trong phần tiếp theo, ta sẽ thực hiện gửi Mail bằng
+                                Mailjet trong ứng dụng Java.</p>
                             <div class="row justify-content-center text-center">
                                 <figure class="figure w-50">
-                                    <img src="assets/img/mailjet/api.jpg"
-                                        class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">API Document 
+                                    <img src="assets/img/mailjet/api.jpg" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">API Document
                                     </figcaption>
-                                </figure>                          
+                                </figure>
                             </div>
                             <div class="row justify-content-center text-center">
                                 <figure class="figure w-75">
-                                    <img src="assets/img/mailjet/mail-api.png"
-                                        class="figure-img img-fluid rounded" alt="...">
+                                    <img src="assets/img/mailjet/mail-api.png" class="figure-img img-fluid rounded"
+                                        alt="...">
                                     <figcaption class="figure-caption">Send API Document
                                     </figcaption>
-                                </figure>    
+                                </figure>
                             </div>
-                            <!-- <p>Ví dụ, với việc gửi mail trong Java, có thể dễ dàng triển khai như sau: </p>
-                            <pre>
-                                
-                            </pre> -->
-                            
+                            <p>
+                                API Document đã mô tả chi tiết cách gửi Mail với Code Sample của một số ngôn ngữ thông
+                                dụng, trong đó có Java như bên dưới:
+                            </p>
+                            <!-- HTML generated using hilite.me -->
+                            <div
+                                style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                <pre style="margin: 0; line-height: 100%"><span style="color: #008800; font-weight: bold">package</span> com<span style="color: #333333">.</span><span style="color: #0000CC">my</span><span style="color: #333333">.</span><span style="color: #0000CC">project</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.mailjet.client.errors.MailjetException</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.mailjet.client.errors.MailjetSocketTimeoutException</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.mailjet.client.MailjetClient</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.mailjet.client.MailjetRequest</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.mailjet.client.MailjetResponse</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.mailjet.client.ClientOptions</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.mailjet.client.resource.Emailv31</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">org.json.JSONArray</span><span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">org.json.JSONObject</span><span style="color: #333333">;</span>
+    
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">MyClass</span> <span style="color: #333333">{</span>
+        <span style="color: #888888">/**</span>
+    <span style="color: #888888">     * This call sends a message to one recipient.</span>
+    <span style="color: #888888">     */</span>
+        <span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">static</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">main</span><span style="color: #333333">(</span>String<span style="color: #333333">[]</span> args<span style="color: #333333">)</span> <span style="color: #008800; font-weight: bold">throws</span> MailjetException<span style="color: #333333">,</span> MailjetSocketTimeoutException <span style="color: #333333">{</span>
+          MailjetClient client<span style="color: #333333">;</span>
+          MailjetRequest request<span style="color: #333333">;</span>
+          MailjetResponse response<span style="color: #333333">;</span>
+          client <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> MailjetClient<span style="color: #333333">(</span>System<span style="color: #333333">.</span><span style="color: #0000CC">getenv</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;MJ_APIKEY_PUBLIC&quot;</span><span style="color: #333333">),</span> System<span style="color: #333333">.</span><span style="color: #0000CC">getenv</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;MJ_APIKEY_PRIVATE&quot;</span><span style="color: #333333">),</span> <span style="color: #008800; font-weight: bold">new</span> ClientOptions<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;v3.1&quot;</span><span style="color: #333333">));</span>
+          request <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> MailjetRequest<span style="color: #333333">(</span>Emailv31<span style="color: #333333">.</span><span style="color: #0000CC">resource</span><span style="color: #333333">)</span>
+                <span style="color: #333333">.</span><span style="color: #0000CC">property</span><span style="color: #333333">(</span>Emailv31<span style="color: #333333">.</span><span style="color: #0000CC">MESSAGES</span><span style="color: #333333">,</span> <span style="color: #008800; font-weight: bold">new</span> JSONArray<span style="color: #333333">()</span>
+                    <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> JSONObject<span style="color: #333333">()</span>
+                        <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span>Emailv31<span style="color: #333333">.</span><span style="color: #0000CC">Message</span><span style="color: #333333">.</span><span style="color: #0000CC">FROM</span><span style="color: #333333">,</span> <span style="color: #008800; font-weight: bold">new</span> JSONObject<span style="color: #333333">()</span>
+                            <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Email&quot;</span><span style="color: #333333">,</span> <span style="background-color: #fff0f0">&quot;pilot@mailjet.com&quot;</span><span style="color: #333333">)</span>
+                            <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Name&quot;</span><span style="color: #333333">,</span> <span style="background-color: #fff0f0">&quot;Mailjet Pilot&quot;</span><span style="color: #333333">))</span>
+                        <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span>Emailv31<span style="color: #333333">.</span><span style="color: #0000CC">Message</span><span style="color: #333333">.</span><span style="color: #0000CC">TO</span><span style="color: #333333">,</span> <span style="color: #008800; font-weight: bold">new</span> JSONArray<span style="color: #333333">()</span>
+                            <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> JSONObject<span style="color: #333333">()</span>
+                                <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Email&quot;</span><span style="color: #333333">,</span> <span style="background-color: #fff0f0">&quot;passenger1@mailjet.com&quot;</span><span style="color: #333333">)</span>
+                                <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Name&quot;</span><span style="color: #333333">,</span> <span style="background-color: #fff0f0">&quot;passenger 1&quot;</span><span style="color: #333333">)))</span>
+                        <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span>Emailv31<span style="color: #333333">.</span><span style="color: #0000CC">Message</span><span style="color: #333333">.</span><span style="color: #0000CC">SUBJECT</span><span style="color: #333333">,</span> <span style="background-color: #fff0f0">&quot;Your email flight plan!&quot;</span><span style="color: #333333">)</span>
+                        <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span>Emailv31<span style="color: #333333">.</span><span style="color: #0000CC">Message</span><span style="color: #333333">.</span><span style="color: #0000CC">TEXTPART</span><span style="color: #333333">,</span> <span style="background-color: #fff0f0">&quot;Dear passenger 1, welcome to Mailjet! May the delivery force be with you!&quot;</span><span style="color: #333333">)</span>
+                        <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span>Emailv31<span style="color: #333333">.</span><span style="color: #0000CC">Message</span><span style="color: #333333">.</span><span style="color: #0000CC">HTMLPART</span><span style="color: #333333">,</span> <span style="background-color: #fff0f0">&quot;&lt;h3&gt;Dear passenger 1, welcome to &lt;a href=\&quot;https://www.mailjet.com/\&quot;&gt;Mailjet&lt;/a&gt;!&lt;/h3&gt;&lt;br /&gt;May the delivery force be with you!&quot;</span><span style="color: #333333">)));</span>
+          response <span style="color: #333333">=</span> client<span style="color: #333333">.</span><span style="color: #0000CC">post</span><span style="color: #333333">(</span>request<span style="color: #333333">);</span>
+          System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span>response<span style="color: #333333">.</span><span style="color: #0000CC">getStatus</span><span style="color: #333333">());</span>
+          System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span>response<span style="color: #333333">.</span><span style="color: #0000CC">getData</span><span style="color: #333333">());</span>
+        <span style="color: #333333">}</span>
+    <span style="color: #333333">}</span>
+    </pre>
+                            </div>
+                            <p>Khi send thành công, Mailjet sẽ trả về Status Code là 200, kèm theo Response Body như bên
+                                dưới: </p>
+                            <!-- HTML generated using hilite.me -->
+                            <div
+                                style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                <pre style="margin: 0; line-height: 100%">{
+  <span style="color: #007700">&quot;Messages&quot;</span>: [
+  {
+    <span style="color: #007700">&quot;Status&quot;</span>: <span style="background-color: #fff0f0">&quot;success&quot;</span>,
+    <span style="color: #007700">&quot;To&quot;</span>: [
+      {
+        <span style="color: #007700">&quot;Email&quot;</span>: <span style="background-color: #fff0f0">&quot;passenger1@mailjet.com&quot;</span>,
+        <span style="color: #007700">&quot;MessageUUID&quot;</span>: <span style="background-color: #fff0f0">&quot;123&quot;</span>,
+        <span style="color: #007700">&quot;MessageID&quot;</span>: <span style="color: #0000DD; font-weight: bold">456</span>,
+        <span style="color: #007700">&quot;MessageHref&quot;</span>: <span style="background-color: #fff0f0">&quot;https://api.mailjet.com/v3/message/456&quot;</span>
+      }
+    ]
+  }
+]
+}
+</pre>
+
+                            </div>
+                            <p>Có thể thấy, cách gửi Mail với Mailjet về cơ bản là ta sẽ dựng lên một JsonObject trong
+                                Java và method put để thêm các thuộc tính dữ liệu cần thiết để tạo ra Json trong Request
+                                Body. Cách triển khai khiến code trở nên khó đọc, và khó mở rộng thêm. Vì vậy dưới đây,
+                                mình sẽ mô tả cách triển khai tối ưu hơn, ta sẽ tạo ra một Request DTO để chứa thông tin
+                                Mail Request dưới dạng DTO (Data Transfer Object) rồi mới chuyển tất cả sang JsonObject.</p>
+
+                            <h2>2. Triển khai Mailjet trong Java </h2>
+                            <div class="alert alert-danger" role="alert">
+                                Source code dưới đây được viết được tạo bằng Maven với phiên bản Java 8.
+                            </div>
+                            <p>Để sử dụng Mailjet API trong Java, ta sẽ cần tới Dependency của Mailjet trong file
+                                pom.xml, ngoài ra ta sử dụng thêm một số Dependency để hỗ trợ trong project này: </p>
+                            <!-- HTML generated using hilite.me -->
+                            <div
+                                style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <pre style="margin: 0; line-height: 100%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</pre>
+                                        </td>
+                                        <td>
+                                            <pre style="margin: 0; line-height: 100%">        <span style="color: #007700">&lt;dependency&gt;</span>
+            <span style="color: #007700">&lt;groupId&gt;</span>com.mailjet<span style="color: #007700">&lt;/groupId&gt;</span>
+            <span style="color: #007700">&lt;artifactId&gt;</span>mailjet-client<span style="color: #007700">&lt;/artifactId&gt;</span>
+            <span style="color: #007700">&lt;version&gt;</span>4.2.0<span style="color: #007700">&lt;/version&gt;</span>
+        <span style="color: #007700">&lt;/dependency&gt;</span>
+        <span style="color: #007700">&lt;dependency&gt;</span>
+            <span style="color: #007700">&lt;groupId&gt;</span>com.google.code.gson<span style="color: #007700">&lt;/groupId&gt;</span>
+            <span style="color: #007700">&lt;artifactId&gt;</span>gson<span style="color: #007700">&lt;/artifactId&gt;</span>
+            <span style="color: #007700">&lt;version&gt;</span>2.9.0<span style="color: #007700">&lt;/version&gt;</span>
+        <span style="color: #007700">&lt;/dependency&gt;</span>
+        <span style="color: #007700">&lt;dependency&gt;</span>
+            <span style="color: #007700">&lt;groupId&gt;</span>commons-io<span style="color: #007700">&lt;/groupId&gt;</span>
+            <span style="color: #007700">&lt;artifactId&gt;</span>commons-io<span style="color: #007700">&lt;/artifactId&gt;</span>
+            <span style="color: #007700">&lt;version&gt;</span>2.11.0<span style="color: #007700">&lt;/version&gt;</span>
+        <span style="color: #007700">&lt;/dependency&gt;</span>
+        <span style="color: #007700">&lt;dependency&gt;</span>
+            <span style="color: #007700">&lt;groupId&gt;</span>org.apache.commons<span style="color: #007700">&lt;/groupId&gt;</span>
+            <span style="color: #007700">&lt;artifactId&gt;</span>commons-text<span style="color: #007700">&lt;/artifactId&gt;</span>
+            <span style="color: #007700">&lt;version&gt;</span>1.10.0<span style="color: #007700">&lt;/version&gt;</span>
+        <span style="color: #007700">&lt;/dependency&gt;</span>
+        <span style="color: #007700">&lt;dependency&gt;</span>
+            <span style="color: #007700">&lt;groupId&gt;</span>org.projectlombok<span style="color: #007700">&lt;/groupId&gt;</span>
+            <span style="color: #007700">&lt;artifactId&gt;</span>lombok<span style="color: #007700">&lt;/artifactId&gt;</span>
+            <span style="color: #007700">&lt;version&gt;</span>1.18.24<span style="color: #007700">&lt;/version&gt;</span>
+        <span style="color: #007700">&lt;/dependency&gt;</span>
+</pre>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br>
+<h3>2.1 Tạo các class DTO</h3>
+<p>Tạo class EmailDto.java để chứa thông tin một Mailer, bao gồm: tên email và tên người dùng email.</p>
+                            <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 100%"><span style="color: #555555; font-weight: bold">@AllArgsConstructor</span>
+<span style="color: #555555; font-weight: bold">@Getter</span>
+<span style="color: #555555; font-weight: bold">@ToString</span>
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">MailerDto</span> <span style="color: #333333">{</span>
+    <span style="color: #008800; font-weight: bold">private</span> String email<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> String name<span style="color: #333333">;</span>
+<span style="color: #333333">}</span>
+</pre></div>
+<p>Tạo class AttachmentDto.java chứa thông tin của file đính kèm, bao gồm: tên file sẽ hiển thị, dạng nội dụng và nội dung File được mã hoá ở dạng base64.</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">org.example.enums.ContentType</span><span style="color: #333333">;</span>
+
+<span style="color: #555555; font-weight: bold">@NoArgsConstructor</span>
+<span style="color: #555555; font-weight: bold">@AllArgsConstructor</span>
+<span style="color: #555555; font-weight: bold">@Builder</span>
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">AttachmentDto</span> <span style="color: #333333">{</span>
+    <span style="color: #008800; font-weight: bold">private</span> String fileName<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> ContentType contentType<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> String base64Content<span style="color: #333333">;</span>
+<span style="color: #333333">}</span>
+    </pre></div>
+    
+    <p>Ta sẽ khai báo enum ContentType.java, để định nghĩa các loại ContentType. @SerializedName được sử dụng để chỉ ra giá trị của Enum Field khi được Convert sang Json.</p>
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.google.gson.annotations.SerializedName</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">enum</span> ContentType <span style="color: #333333">{</span>
+    <span style="color: #555555; font-weight: bold">@SerializedName</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;text/html&quot;</span><span style="color: #333333">)</span>
+    TEXT_HTML<span style="color: #333333">,</span>
+    <span style="color: #555555; font-weight: bold">@SerializedName</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;text/plain&quot;</span><span style="color: #333333">)</span>
+    TEXT_PLAIN<span style="color: #333333">,</span>
+    <span style="color: #555555; font-weight: bold">@SerializedName</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;text/csv&quot;</span><span style="color: #333333">)</span>
+    TEXT_CSV<span style="color: #333333">,</span>
+    <span style="color: #555555; font-weight: bold">@SerializedName</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;video/mp4&quot;</span><span style="color: #333333">)</span>
+    VIDEO_MP4<span style="color: #333333">,</span>
+    <span style="color: #555555; font-weight: bold">@SerializedName</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;image/gif&quot;</span><span style="color: #333333">)</span>
+    IMAGE_GIF<span style="color: #333333">,</span>
+    <span style="color: #555555; font-weight: bold">@SerializedName</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;image/jpeg&quot;</span><span style="color: #333333">)</span>
+    IMAGE_JPEG<span style="color: #333333">,</span>
+    <span style="color: #555555; font-weight: bold">@SerializedName</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;image/png&quot;</span><span style="color: #333333">)</span>
+    IMAGE_PNG<span style="color: #333333">;</span>
+<span style="color: #333333">}</span>
+</pre></div>
+
+    <p>Và cuối cùng, là class EmailDto, đại diện cho toàn bộ thông tin muốn gửi trong một Sending Mail Request.</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 110%"><span style="color: #555555; font-weight: bold">@Getter</span>
+<span style="color: #555555; font-weight: bold">@Setter</span>
+<span style="color: #555555; font-weight: bold">@ToString</span>
+<span style="color: #555555; font-weight: bold">@Builder</span>
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">EmailDto</span> <span style="color: #333333">{</span>
+    <span style="color: #008800; font-weight: bold">private</span> MailerDto from<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> List<span style="color: #333333">&lt;</span>MailerDto<span style="color: #333333">&gt;</span> to<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> List<span style="color: #333333">&lt;</span>MailerDto<span style="color: #333333">&gt;</span> cc<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> List<span style="color: #333333">&lt;</span>MailerDto<span style="color: #333333">&gt;</span> bcc<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> String subject<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> String textPart<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> String htmlPart<span style="color: #333333">;</span>
+    <span style="color: #555555; font-weight: bold">@ToString.Exclude</span>
+    <span style="color: #008800; font-weight: bold">private</span> List<span style="color: #333333">&lt;</span>AttachmentDto<span style="color: #333333">&gt;</span> attachments<span style="color: #333333">;</span>
+<span style="color: #333333">}</span>
+    </pre></div>
+    <p>Như vậy ta đã tạo xong các DTO cần thiết, tiếp theo sẽ cần một Email Service.</p>
+
+    <h3>2.2 Tạo class Email Service</h3>
+    <p>Define ra method gửi Mail mà một Email Service cần có. </p>
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">interface</span> <span style="color: #BB0066; font-weight: bold">EmailService</span> <span style="color: #333333">{</span>
+     <span style="color: #333399; font-weight: bold">boolean</span> <span style="color: #0066BB; font-weight: bold">sendEmail</span><span style="color: #333333">(</span>EmailDto emailDto<span style="color: #333333">);</span>
+<span style="color: #333333">}</span>
+</pre></div>
+<br>
+    <p>Tạo implementation của EmailService, là class MailjetService. Các thông tin về nhạy cảm như Secret Key, nên để trong một file properties, tránh sử dụng hardcode. </p>
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">MailjetService</span> <span style="color: #008800; font-weight: bold">implements</span> EmailService <span style="color: #333333">{</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #008800; font-weight: bold">final</span> String apiKey <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #333333">;</span> <span style="color: #888888">//your api key</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #008800; font-weight: bold">final</span> String secretKey <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #333333">;</span> <span style="color: #888888">//your secret key</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #008800; font-weight: bold">final</span> String mailJetVersion <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;v3.1&quot;</span><span style="color: #333333">;</span> <span style="color: #888888">//mailjet api version</span>
+        
+    <span style="color: #555555; font-weight: bold">@Override</span>
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #333399; font-weight: bold">boolean</span> <span style="color: #0066BB; font-weight: bold">sendEmail</span><span style="color: #333333">(</span>EmailDto emailDto<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        MailjetClient client <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> MailjetClient<span style="color: #333333">(</span>apiKey<span style="color: #333333">,</span> secretKey<span style="color: #333333">,</span> <span style="color: #008800; font-weight: bold">new</span> ClientOptions<span style="color: #333333">(</span>mailJetVersion<span style="color: #333333">));</span>
+        MailjetRequest request <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> MailjetRequest<span style="color: #333333">(</span>Emailv31<span style="color: #333333">.</span><span style="color: #0000CC">resource</span><span style="color: #333333">)</span>
+                <span style="color: #333333">.</span><span style="color: #0000CC">property</span><span style="color: #333333">(</span>Emailv31<span style="color: #333333">.</span><span style="color: #0000CC">MESSAGES</span><span style="color: #333333">,</span> <span style="color: #008800; font-weight: bold">new</span> JSONArray<span style="color: #333333">()</span>
+                        <span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> JSONObject<span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> Gson<span style="color: #333333">().</span><span style="color: #0000CC">toJson</span><span style="color: #333333">(</span>emailDto<span style="color: #333333">))));</span>
+        <span style="color: #008800; font-weight: bold">try</span><span style="color: #333333">{</span>
+            MailjetResponse response <span style="color: #333333">=</span> client<span style="color: #333333">.</span><span style="color: #0000CC">post</span><span style="color: #333333">(</span>request<span style="color: #333333">);</span>
+            System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span>response<span style="color: #333333">.</span><span style="color: #0000CC">getStatus</span><span style="color: #333333">());</span>
+            System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span>response<span style="color: #333333">.</span><span style="color: #0000CC">getData</span><span style="color: #333333">());</span>
+            <span style="color: #008800; font-weight: bold">return</span> <span style="color: #008800; font-weight: bold">true</span><span style="color: #333333">;</span>
+        <span style="color: #333333">}</span><span style="color: #008800; font-weight: bold">catch</span> <span style="color: #333333">(</span>Exception e<span style="color: #333333">){</span>
+            <span style="color: #008800; font-weight: bold">return</span> <span style="color: #008800; font-weight: bold">false</span><span style="color: #333333">;</span>
+        <span style="color: #333333">}</span>
+    <span style="color: #333333">}</span>
+<span style="color: #333333">}</span>
+</pre></div>
+<p>Như vậy, ta đã tạo xong một Mail Service và sẵn sàng để gửi mail. Tiếp theo, ta sẽ khởi tạo một EmailDto và test trong hàm main. </p>
+<h3>2.3 Test chức năng gửi Mail</h3>
+<p>Trước tiên, ta sẽ tạo ra một Mail template để gửi đi. Các dynamic content trong mail sẽ khai báo trong biểu thức {}, ví dụ {name}.</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #557799">&lt;!doctype html&gt;</span>
+<span style="color: #007700">&lt;html</span> <span style="color: #0000CC">lang=</span><span style="background-color: #fff0f0">&quot;en&quot;</span><span style="color: #007700">&gt;</span>
+<span style="color: #007700">&lt;head&gt;</span>
+    <span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">charset=</span><span style="background-color: #fff0f0">&quot;UTF-8&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">name=</span><span style="background-color: #fff0f0">&quot;viewport&quot;</span>
+            <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;meta</span> <span style="color: #0000CC">http-equiv=</span><span style="background-color: #fff0f0">&quot;X-UA-Compatible&quot;</span> <span style="color: #0000CC">content=</span><span style="background-color: #fff0f0">&quot;ie=edge&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;title&gt;</span>Welcome visit!<span style="color: #007700">&lt;/title&gt;</span>
+    <span style="color: #007700">&lt;/head&gt;</span>
+
+    <span style="color: #007700">&lt;body&gt;</span>
+    <span style="color: #007700">&lt;h1&gt;</span>Welcome ${name} register my website!<span style="color: #007700">&lt;/h1&gt;</span>
+    <span style="color: #007700">&lt;/body&gt;</span>
+<span style="color: #007700">&lt;/html&gt;</span>
+    </pre></div>
+    <br>
+    <p>Tiếp theo, tạo ra một file đính kèm tên attachment.txt, đặt trực tiếp trong project với nội dung là: "This is attachment file!"</p>
+    <div class="row justify-content-center text-center">
+        <figure class="figure w-50">
+            <img src="assets/img/mailjet/attachment.png"
+                class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">attachment.txt </figcaption>
+        </figure>
+    </div>
+    <p>Và cuối cùng, thực hiện khởi tạo EmailDto và gọi Mail Service để Send Mail.</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">static</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">main</span><span style="color: #333333">(</span>String<span style="color: #333333">[]</span> args<span style="color: #333333">)</span> <span style="color: #008800; font-weight: bold">throws</span> IOException <span style="color: #333333">{</span>
+    EmailService emailService <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> MailjetService<span style="color: #333333">();</span>
+
+    <span style="color: #888888">//Create host mail</span>
+    String hostEmail <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;longnq.tech@gmail.com&quot;</span><span style="color: #333333">;</span> <span style="color: #888888">//your host email</span>
+    String hostName <span style="color: #333333">=</span> <span style="background-color: #fff0f0">&quot;Long Nguyen Coder&quot;</span><span style="color: #333333">;</span> <span style="color: #888888">//your host name</span>
+
+    <span style="color: #888888">//Create &quot;mail to&quot; list</span>
+    MailerDto toMailer <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> MailerDto<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;famailtraptest1@gmail.com&quot;</span><span style="color: #333333">,</span> <span style="background-color: #fff0f0">&quot;FA Mailtrap&quot;</span><span style="color: #333333">);</span> <span style="color: #888888">//mail to</span>
+    List<span style="color: #333333">&lt;</span>MailerDto<span style="color: #333333">&gt;</span> toMailerList <span style="color: #333333">=</span> Arrays<span style="color: #333333">.</span><span style="color: #0000CC">asList</span><span style="color: #333333">(</span>toMailer<span style="color: #333333">);</span>
+
+    <span style="color: #888888">//Create mail body</span>
+    String mailBody <span style="color: #333333">=</span> FileUtils<span style="color: #333333">.</span><span style="color: #0000CC">readFileToString</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> File<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;welcome-mail.html&quot;</span><span style="color: #333333">),</span> <span style="background-color: #fff0f0">&quot;UTF-8&quot;</span><span style="color: #333333">);</span>
+        <span style="color: #888888">//Pasting dynamic content to mail template</span>
+    Map<span style="color: #333333">&lt;</span>String<span style="color: #333333">,</span> String<span style="color: #333333">&gt;</span> mailAttributes <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> HashMap<span style="color: #333333">&lt;&gt;();</span>
+    mailAttributes<span style="color: #333333">.</span><span style="color: #0000CC">put</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;name&quot;</span><span style="color: #333333">,</span> toMailer<span style="color: #333333">.</span><span style="color: #0000CC">getName</span><span style="color: #333333">());</span>
+    StringSubstitutor stringSubstitutor <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> StringSubstitutor<span style="color: #333333">(</span>mailAttributes<span style="color: #333333">);</span>
+    mailBody <span style="color: #333333">=</span> stringSubstitutor<span style="color: #333333">.</span><span style="color: #0000CC">replace</span><span style="color: #333333">(</span>mailBody<span style="color: #333333">);</span>
+
+    <span style="color: #888888">//Create attachments</span>
+    File attachedFile <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> File<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;attachment.txt&quot;</span><span style="color: #333333">);</span>
+    <span style="color: #333399; font-weight: bold">byte</span><span style="color: #333333">[]</span> fileBytes <span style="color: #333333">=</span> IOUtils<span style="color: #333333">.</span><span style="color: #0000CC">toByteArray</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> FileInputStream<span style="color: #333333">(</span>attachedFile<span style="color: #333333">));</span>
+    String base64content <span style="color: #333333">=</span> Base64<span style="color: #333333">.</span><span style="color: #0000CC">getEncoder</span><span style="color: #333333">().</span><span style="color: #0000CC">encodeToString</span><span style="color: #333333">(</span>fileBytes<span style="color: #333333">);</span>
+    AttachmentDto attachment <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> AttachmentDto<span style="color: #333333">(</span>attachedFile<span style="color: #333333">.</span><span style="color: #0000CC">getName</span><span style="color: #333333">(),</span> ContentType<span style="color: #333333">.</span><span style="color: #0000CC">TEXT_PLAIN</span><span style="color: #333333">,</span> base64content<span style="color: #333333">);</span>
+    List<span style="color: #333333">&lt;</span>AttachmentDto<span style="color: #333333">&gt;</span> attachments <span style="color: #333333">=</span> Arrays<span style="color: #333333">.</span><span style="color: #0000CC">asList</span><span style="color: #333333">(</span>attachment<span style="color: #333333">);</span>
+
+    <span style="color: #888888">//Create email dto</span>
+    EmailDto email <span style="color: #333333">=</span> EmailDto<span style="color: #333333">.</span><span style="color: #0000CC">builder</span><span style="color: #333333">()</span>
+            <span style="color: #333333">.</span><span style="color: #0000CC">from</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> MailerDto<span style="color: #333333">(</span>hostEmail<span style="color: #333333">,</span> hostName<span style="color: #333333">))</span>
+            <span style="color: #333333">.</span><span style="color: #0000CC">to</span><span style="color: #333333">(</span>toMailerList<span style="color: #333333">)</span>
+            <span style="color: #333333">.</span><span style="color: #0000CC">subject</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Mail demo greetings&quot;</span><span style="color: #333333">)</span>
+            <span style="color: #333333">.</span><span style="color: #0000CC">htmlPart</span><span style="color: #333333">(</span>mailBody<span style="color: #333333">)</span>
+            <span style="color: #333333">.</span><span style="color: #0000CC">attachments</span><span style="color: #333333">(</span>attachments<span style="color: #333333">)</span>
+            <span style="color: #333333">.</span><span style="color: #0000CC">build</span><span style="color: #333333">();</span>
+
+    <span style="color: #888888">//Send email</span>
+    System<span style="color: #333333">.</span><span style="color: #0000CC">out</span><span style="color: #333333">.</span><span style="color: #0000CC">println</span><span style="color: #333333">(</span>emailService<span style="color: #333333">.</span><span style="color: #0000CC">sendEmail</span><span style="color: #333333">(</span>email<span style="color: #333333">)</span> <span style="color: #333333">?</span> <span style="background-color: #fff0f0">&quot;Send success&quot;</span> <span style="color: #333333">:</span> <span style="background-color: #fff0f0">&quot;Send failed&quot;</span><span style="color: #333333">);</span>
+<span style="color: #333333">}</span>
+</pre></div>
+<p>Tiến hành Run hàm main(), Mailjet trả về Success Response như bên dưới.</p>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray ;border-width:.1em .1em .1em .8em;padding:.2em .6em;overflow: auto;"><pre style="margin: 0; line-height: 125%"><span style="background-color: #fff0f0">&quot;C:\Program Files\Java\jdk1.8.0_202\bin\java.exe&quot;</span> <span style="color: #FF0000; background-color: #FFAAAA">...</span> 
+<span style="color: #0000DD; font-weight: bold">200</span>
+[
+    {
+    <span style="color: #007700">&quot;Status&quot;</span>: <span style="background-color: #fff0f0">&quot;success&quot;</span>,
+    <span style="color: #007700">&quot;Cc&quot;</span>: [],
+    <span style="color: #007700">&quot;Bcc&quot;</span>: [],
+    <span style="color: #007700">&quot;CustomID&quot;</span>: <span style="background-color: #fff0f0">&quot;&quot;</span>,
+    <span style="color: #007700">&quot;To&quot;</span>: [
+        {
+        <span style="color: #007700">&quot;Email&quot;</span>: <span style="background-color: #fff0f0">&quot;famailtraptest1@gmail.com&quot;</span>,
+        <span style="color: #007700">&quot;MessageHref&quot;</span>: <span style="background-color: #fff0f0">&quot;https://api.mailjet.com/v3/REST/message/288230392525455151&quot;</span>,
+        <span style="color: #007700">&quot;MessageUUID&quot;</span>: <span style="background-color: #fff0f0">&quot;ea1fe287-2dcc-42c9-a771-20b42545f26b&quot;</span>,
+        <span style="color: #007700">&quot;MessageID&quot;</span>: <span style="color: #0000DD; font-weight: bold">288230392525455170</span>
+        }
+    ]
+    }
+]
+<span style="color: #007700; font-weight: bold">Send success</span>
+    
+<span>Process finished with exit code</span> <span style="color: #0000DD; font-weight: bold">0</span>
+</pre></div>
+<p>Tiến hành kiểm tra hòm thư của người nhận, đã tìm thấy mail trong mục Tất cả thư. Như vậy, việc gửi Mail đã diển ra thành công.</p>
+<div class="row justify-content-center text-center">
+    <figure class="figure w-75">
+        <img src="assets/img/mailjet/response-mail.png"
+            class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">Received Mail </figcaption>
+    </figure>
+</div>
+<div>
+    <i>Xem source code tham khảo <a href="https://github.com/QuyLongNguyen/java-send-mail">tại đây.</a></i>
+</div>
+<br>
+<h2>Kết luận</h2>
+<p><b>Như vậy, bài viết đã hướng dẫn tới các bạn đọc việc gửi mail với một Mail Service với cách triển khai dễ hiểu nhất có thể. Hy vọng, nội dung bài viết sẽ giúp ích tới các bạn đọc. </b></p>
+
+
                         </div>
                     </div>
 
@@ -242,11 +604,8 @@
                         <div class="author-info">
                             <div class="line"></div>
                             <span class="author-role">Author</span>
-                            <h4><a href="#" class="author-name">James Morrison</a></h4>
-                            <p>Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam
-                                vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel
-                                volutpat quam tincidunt. Nullam vestibulum convallis risus vel condimentum. Nullam
-                                auctor lorem in libero.</p>
+                            <h4><a href="#" class="author-name">Long Nguyen</h4>
+
                         </div>
                     </div>
 
@@ -328,4 +687,5 @@
     <!-- Active js -->
     <script src="/assets/js/active.js"></script>
 </body>
+
 </html>
