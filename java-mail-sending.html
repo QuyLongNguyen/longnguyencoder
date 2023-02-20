@@ -323,7 +323,7 @@
                                 mình sẽ mô tả cách triển khai tối ưu hơn, ta sẽ tạo ra một Request DTO để chứa thông tin
                                 Mail Request dưới dạng DTO (Data Transfer Object) rồi mới chuyển tất cả sang JsonObject.</p>
 
-                            <h2>2. Triển khai Mailjet trong Java </h2>
+                            <h2>3. Triển khai Mailjet trong Java </h2>
                             <div class="alert alert-danger" role="alert">
                                 Source code dưới đây được viết được tạo bằng Maven với phiên bản Java 8.
                             </div>
@@ -393,7 +393,7 @@
                                 </table>
                             </div>
                             <br>
-<h3>2.1 Tạo các class DTO</h3>
+<h3>3.1 Tạo các class DTO</h3>
 <p>Tạo class EmailDto.java để chứa thông tin một Mailer, bao gồm: tên email và tên người dùng email.</p>
                             <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 100%"><span style="color: #555555; font-weight: bold">@AllArgsConstructor</span>
 <span style="color: #555555; font-weight: bold">@Getter</span>
@@ -456,7 +456,7 @@
     </pre></div>
     <p>Như vậy ta đã tạo xong các DTO cần thiết, tiếp theo sẽ cần một Email Service.</p>
 
-    <h3>2.2 Tạo class Email Service</h3>
+    <h3>3.2 Tạo class Email Service</h3>
     <p>Define ra method gửi Mail mà một Email Service cần có. </p>
     <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">interface</span> <span style="color: #BB0066; font-weight: bold">EmailService</span> <span style="color: #333333">{</span>
      <span style="color: #333399; font-weight: bold">boolean</span> <span style="color: #0066BB; font-weight: bold">sendEmail</span><span style="color: #333333">(</span>EmailDto emailDto<span style="color: #333333">);</span>
@@ -487,7 +487,7 @@
 <span style="color: #333333">}</span>
 </pre></div>
 <p>Như vậy, ta đã tạo xong một Mail Service và sẵn sàng để gửi mail. Tiếp theo, ta sẽ khởi tạo một EmailDto và test trong hàm main. </p>
-<h3>2.3 Test chức năng gửi Mail</h3>
+<h3>3.3 Test chức năng gửi Mail</h3>
 <p>Trước tiên, ta sẽ tạo ra một Mail template để gửi đi. Các dynamic content trong mail sẽ khai báo trong biểu thức {}, ví dụ {name}.</p>
 
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #557799">&lt;!doctype html&gt;</span>
