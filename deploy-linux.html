@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Nguyen Coder | Hướng dẫn gửi mail với Mailjet API</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/img/core-img/favicon.ico">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/assets/style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="original-load"></div>
+        </div>
+    </div>
+
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area" id="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Breaking News Area -->
+                    <div class="col-12 col-sm-8">
+                        <div class="breaking-news-area">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">Long Nguyen Coder</a></li>
+                                    <li><a href="#">More sharing, more gaining!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Top Social Area -->
+                    <div class="col-12 col-sm-4">
+                        <div class="top-social-area">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo Area -->
+        <div class="logo-area text-center">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <a href="index.html" class="original-logo"><img src="/assets/img/core-img/logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav Area -->
+        <div class="original-nav-area" id="stickyNav">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-end">
+
+                        <!-- Menu -->
+                        <div class="classy-menu" id="originalNav">
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#">Programming</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">OOP</a></li>
+                                            <li><a href="#">Java</a></li>
+                                            <li><a href="#">JavaScript </a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Database</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">SQL</a></li>
+                                            <li><a href="#">NoSQL</a></li>
+                                            <li><a href="#">Database Design</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#">Others</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">IT stories</a></li>
+                                            <li><a href="#">Life stories</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="about-me.html">About Us</a></li>
+
+                                </ul>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Single Blog Area Start ##### -->
+    <div class="single-blog-wrapper section-padding-0-100">
+
+
+        <div class="container">
+            <div class="row">
+                <!-- ##### Post Content Area ##### -->
+                <div class="col-12 col-lg-12">
+                    <!-- Single Blog Area  -->
+                    <div class="single-blog-area blog-style-2 mb-50">
+                        <!-- Blog Content -->
+                        <div class="single-blog-content">
+                            <div class="line"></div>
+                            <a href="#" class="post-tag">Java</a>
+                            <a href="#" class="post-tag">Linux</a>
+
+
+                            <h1 class="post-headline mb-0 h1">Mình đã deploy Spring Boot cùng MySQL lên Linux server như thế nào ?</h1>
+                            <p><small>12/08/2023</small></p>
+                            <div class="post-meta mb-50">
+                                <p>By <a href="#">Long Nguyen</a></p>
+                            </div>
+
+                            <div class="border rounded border-dark bg-light">
+                                <ol class="mx-5 my-3">
+                                    <li><a href="#section1">Trang bị server</a></li>
+                                    <li><a href="#section2">Kết nối tới server</a></li>
+                                    <li><a href="#section3">Cài đặt môi trường server</a></li>
+                                    <li><a href="#section4">Đóng gói ứng dụng</a></li>
+                                    <li><a href="#section5">Đưa ứng dụng vào server</a></li>
+                                    <li><a href="#section6">Chạy ứng dụng trong server</a></li>
+                                    <li><a href="#section7">Cập nhật ứng dụng trong server</a></li>
+                                </ol>
+                            </div>
+
+                            <br>
+
+                            <p><b>Việc deploy một ứng dụng có nghĩa là đưa ứng dụng từ môi trường phát triển (local, dev) sang môi trường hoạt động thực tế (test, uat, production) để người dùng có thể truy cập và sử dụng. 
+                                Quá trình này bao gồm việc cài đặt các thành phần cần thiết, cấu hình hệ thống và đảm bảo ứng dụng hoạt động một cách đúng đắn trên môi trường hoạt động thực tế. 
+                                Bài viết này mô tả ngắn gọn quá trình mình thực hiện deploy một ứng dụng Spring Boot với cơ sở dữ liệu MySQL lên server như thế nào.</b>
+                            </p>
+
+                            <h2 id="section1">1. Trang bị server </h2>
+                            <p>Để có thể deploy ứng dụng, chắc chắn sẽ phải cần có một hạ tầng (infrastructure) mà người dùng có thể truy cập được. Để có thể deploy được, việc ta cần phải làm là đưa ứng dụng và các thành phần cần thiết để có thể chạy được ứng dụng trên hạ tầng này.</p>
+
+                            <p>Với ứng dụng di động, hạ tầng thường sẽ là các kho ứng dụng như Google Play, App Store. 
+                                Còn với ứng dụng web, hạ tầng sẽ là một không gian máy chủ, không gian hoạt động giống như một chiếc máy tính thông thường với public IP, nghĩa là có thể được truy cập thông qua môi trường internet. 
+                                Vì ứng dụng mà mình deploy là Web, nên mình sẽ chọn sử dụng một server từ những nhà cung cấp dịch vụ.
+                                Có hai lựa chọn phổ biến là Linux Server và Window Server, vì Linux mang nhiều lợi ích hơn khi sử dụng làm server, nên mình quyết định chọn Linux, lí do tại sao các bạn có thể tìm hiểu thêm.
+                            </p>
+                            <p> 
+                                Vậy việc cần làm bây giờ làm tìm được một Linux Server, ta có thể dễ dàng tìm được bằng cách tra cứu trên google, có rất nhiều nhà cung cấp đến từ Việt Nam và cả nước ngoài.
+                            </p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-75">
+                                    <img src="assets/img/deploy/search-server.png" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">Thông tin tìm kiếm Linux server
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <p>Mình được một người anh suggest sử dụng dịch vụ server được cung cấp bởi DigitalOcean vì giá cả hợp lý lẫn độ ổn định,  các bạn hoàn toàn có thể sử dụng server từ những nhà cung cấp khác.
+                                Ở đây, các gói server của Digital Ocean rất đa dạng, tuỳ vào nhu cầu sử dụng mà có thể chọn gói hợp lý. <a href="https://www.digitalocean.com/pricing/droplets#basic-droplets" target="_blank">Link tham khảo.</a></p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-75">
+                                    <img src="assets/img/deploy/droplet.png"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">Các gói server của DigitalOcean
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <h2 id="section2">2. Kết nối tới server </h2>
+                            <p>Sau khi đã chọn mua server, nhà cung cấp sẽ cần trả về một số thông tin server bao gồm: địa chỉ server, tài khoản, mật khẩu. 
+                                Ta sẽ dùng những thông tin này để truy cập vào bên trong server từ bên ngoài (client), quá trình này được gọi là <i>SSH</i>, các bạn có thể tìm hiểu thêm về giao thức này.</p>
+
+                                <p>SSH có thể thực hiện được thông qua command-line với cú pháp: <i>ssh user@serverip</i>. Nếu máy client đang sử dụng hệ điều hành Window thì có thể cần sẽ cần thêm bước kích hoạt SSH (<a href="https://bkhost.vn/blog/cach-kich-hoat-ssh-tren-windows/" target="_blank">Link hướng dẫn</a>).</p>
+
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/deploy/ssh.png" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">Bắt đầu thực hiện SSH
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <p>Sau khi sử dụng lệnh ssh tới server với user là root, lúc này ta cần nhập thêm password chính là password được cung cấp thi khi thuê/mua server.</p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/deploy/ssh-success.png" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">Giao diện shell
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <p>Nếu sau khi nhập password, một shell sẽ được tạo ra giữa client và server, nếu hiện ra màn hình Welcome như trên thì ta đã thực hiện ssh thành công.</p>
+                            
+                            <h2 id="section3">3. Cài đặt môi trường server</h2>
+                            <p>Do ứng dụng cần deploy là Spring Boot kết nối tới MySQL, nên ta sẽ cần cài đặt một số package như <i>jre, mysql</i> để chạy được ứng dụng trong server.
+                            Trong Linux, lệnh <i>apt</i> là một lệnh phổ biến để quản lý các package tìm kiếm, tải xuống, cập nhật, gỡ bỏ. Mình sẽ tiến hành cài đặt từng package cần thiết bằng apt.</p>
+ 
+                            <h3>3.1 Cài đặt JRE</h3>
+                            <p>Tại sao lại là JRE chứ không phải JDK ? Do là chúng ta chỉ muốn chạy chương trình, chứ không phải xây dựng ra chương trình. Vì vậy chỉ cần cài JRE là đủ dùng.</p> 
+                            <p>Để kiểm tra các package JRE có thể cài, mình sử dụng câu lệnh <i>apt search jre</i>. Câu lệnh này sẽ thực hiện tìm kiếm tất các cả package mà có tên chứa từ khoá jre.</p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/deploy/apt-search.png"
+                                        class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">Apt search list
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <p>Kết quả trả về cho mình một số cách package có chứa tên jre. Do mình sử dụng JDK 17 để xây dựng ứng dụng, vì vậy mình sẽ cài JRE 17. Như ta thế, có một vài package cùng tên là openjdk-17-jre nhưng lại có chút khác ở tên như headless, zero. 
+                                <br>Vậy những package jre này có chức năng gì ? Mình có thể kiểm tra bằng lệnh apt show package_name để xem thông tin chi tiết hơn về một package. Vậy mình sẽ tiến hành xem chi tiết từng package jre này.</p>
+
+
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50 m-2">
+                                    <img src="assets/img/deploy/headless.png" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">JRE headless
+                                    </figcaption>
+                                </figure>
+                                <figure class="figure w-50">
+                                    <img src="assets/img/deploy/zero.png" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">JRE zero
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+
+                            <p>Lệnh apt show sẽ trả về các thông tin chi tiết về package. 
+                                Thông qua phần mô tả, mình thấy là JRE Headless là phiên bản rút gọn của JRE bằng chỉ thực thi các chương trình không có giao diện đồ hoạ (GUI),
+                                 còn JRE Zero chính là JRE Headless nhưng sử dụng một Virtual Machine khác tên Zero VM thay cho VM mặc định của JRE. 
+                                 Vì vậy, mình quyết định cài đặt JRE headless thông qua câu lệnh sudo apt install openjdk-17-jre-headless.
+                                <br>Để kiểm tra cài đặt thành công, gõ lệnh <i>java --version</i>, nếu console hiện ra thông tin về Jre vừa cài đặt có nghĩa là đã cài đặt thành công.</p>
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/deploy/java-version.png" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">Java version
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        
+                            <h3>3.2 Cài đặt MySQL</h3>
+                            <p>
+                                Để cài đặt MySQL, mình sẽ thực hiện theo <a href="https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04" target="_blank"><u>hướng dẫn này</u></a> từng bước một. Sorry vì phần này hơi nhiều bước và hướng dẫn cũng chi tiết, anh em chỉ cần follow thôi nha.
+                            </p>
+
+                            <p>Mặc định MySQL sẽ không cho phép truy cập từ bên ngoài, tức là từ những nơi không cùng địa chỉ với nơi MySQL được cài. Để có thể cho phép MySQL kết nối được từ bên ngoài, hãy thực hiện theo <a href="https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-mysql" target="_blank"><u>hướng dẫn này</u></a>. 
+                                <br>Sau khi thực hiện theo hướng dẫn trên, có thể kiểm tra kết nối trên MySQL Workbench từ Client.</p>
+                                
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/deploy/connection.png" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">Java version
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <p>Nhập các thông tin host, port, username, password rồi chọn Test Connection. Nếu hiển thị thông báo Sucessfully thì kết nối đã thành công.</p>
+                        
+                         
+                    
+                            <h2 id="section4">4. Đóng gói ứng dụng </h2>
+                            
+                            <p>Trước khi đưa ứng dụng vào server, mình sẽ thực hiện đóng gói để tạo ra một chương trình có thể chạy được thông qua JRE luôn. 
+                                Mình đã tạo một ứng dụng Spring Boot bằng Maven, trả về api được lấy từ MySQL như bên dưới: </p>
+
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-50">
+                                    <img src="assets/img/deploy/api.png" class="figure-img border img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">Products API
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <p>Trước khi đóng gói, mình sẽ thay đổi thông tin cấu hình bao gồm kết nối cơ sở dữ liệu. 
+                                File application-deploy.yml là file chứa thông tin cấu hình cho môi trường deploy, mình sẽ để nó được active trong application.yml</p>
+                          
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-100">
+                                    <img src="assets/img/deploy/profile.png" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">Spring profile</figcaption>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <p>Để đóng gói, chọn maven package trong IDE, hoặc dùng lệnh ./mvnw clean package.
+                                 Một số build tool khác như gradle, ant cũng có cơ chế tương tự.
+                                </p>
+
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-100">
+                                    <img src="assets/img/deploy/package.png" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">Maven package</figcaption>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <p>
+                                Sau khi đóng gói, một file jar sẽ được tạo ra có thể chạy thông qua command-line. Việc này cũng được thực thi tương tự ở trong server.
+                            </p>
+
+                            <div class="row justify-content-center text-center">
+                                <figure class="figure w-100">
+                                    <img src="assets/img/deploy/jar.png" class="figure-img img-fluid rounded"
+                                        alt="...">
+                                    <figcaption class="figure-caption">Run jar file</figcaption>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <br>
+
+                <h2 id="section5">5. Đưa ứng dụng vào server</h2>
+                <p>Để đưa ứng dụng vào server, mình sẽ sử dụng một lệnh phổ biến của linux là <i>scp</i> nhằm chuyển File giữa các máy tính. 
+                    Chi tiết có thể xem <a href="https://www.hostinger.vn/huong-dan/lam-the-nao-su-dung-scp-command-de-chuyen-file" target="_blank">tại đây</a>.</p>
+                
+                <p>Trước khi bắt đầu, mình sẽ tạo ra một folder tên artifacts trong server để lưu trữ các packaged program thông qua lệnh <i>mkdir /artifacts</i>. </p>
+
+                <p>Mình sẽ tiến hành chuyển file jar từ phía client (máy của mình) lên server thông qua lệnh như sau: </p>
+
+                <div class="row justify-content-center text-center">
+                    <figure class="figure w-100">
+                        <img src="assets/img/deploy/scp-jar.png" class="figure-img img-fluid rounded"
+                            alt="...">
+                        <figcaption class="figure-caption">Gửi file jar thông qua scp</figcaption>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <p>Lúc này, ta có thể kiểm tra xem file jar đã tồn tại trong server chưa, nếu hiển thị như bên dưới có nghĩa là file đã được gửi đi thành công.</p>
+
+                <div class="row justify-content-center text-center">
+                    <figure class="figure w-75">
+                        <img src="assets/img/deploy/check-jar.png" class="figure-img img-fluid rounded"
+                            alt="...">
+                        <figcaption class="figure-caption">Kiểm tra file jar trong server</figcaption>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <h2 id="section6">6. Chạy ứng dụng trong server</h3>
+            
+                <p>Sau khi đưa file jar vào trong server, mình sẽ thực thi câu lệnh tương tự như chạy trên máy client.</p>
+
+                <div class="row justify-content-center text-center">
+                    <figure class="figure w-100">
+                        <img src="assets/img/deploy/server-jar.png"
+                            class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption">Thực thi chương trình trong server</figcaption>
+                    </figure>
+                </div>
+
+                <p>Sau khi đã chạy thành công, có thể kiểm tra bằng cách truy cập địa chỉ server kèm theo số port của ứng dụng trên trình duyệt.</p>
+
+                <div class="row justify-content-center text-center">
+                    <figure class="figure w-50">
+                        <img src="assets/img/deploy/server-test.png"
+                            class="figure-img img-fluid rounded border" alt="...">
+                            <figcaption class="figure-caption">Kiểm tra chương trình trong server</figcaption>
+                    </figure>
+                </div>
+
+                <p>Như lúc này, ứng dụng đã chạy thành công và mình có thể truy cập được từ bên ngoài thông qua url. 
+                    Tuy nhiên, chương trình lúc này chỉ đang chạy trên shell được giữa client và server, nếu như shell bị đóng lại, thì ứng dụng cũng sẽ bị tắt đi khiến mình không truy cập được nữa, như bên dưới.</p>
+
+                <div class="row justify-content-center text-center">
+                    <figure class="figure w-50">
+                        <img src="assets/img/deploy/server-fail.png"
+                            class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption">Ứng dụng không thể truy cập được nữa</figcaption>
+                    </figure>
+                </div>
+               
+                <p>Để có thể chạy được ứng dụng ngay cả khi không kết nối tới server, mình cần khiến nó chạy ngầm trong server dưới dạng một service của server. Để tạo ra được service, trước tiên, mình tạo ra file deploy-demo.service để khai báo ra một service như bên dưới. 
+                    Các thông tin cần cho một service, các bạn sửa lại thông tin User và ExecStart phù hợp trên máy mình. Chú ý các giá trị viết liền dấu '='.</p>
+
+                <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:fit-content;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;margin: 0 auto;"><pre style="margin: 0; line-height: 125%">[Unit]
+Description=Deploy Demo
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/usr/bin/java -jar /artifacts/deploy-demo-0.0.1-SNAPSHOT.jar
+[Install]
+WantedBy=multi-user.target
+</pre></div>
+<br>
+
+            <p>Sau khi đã tạo ra file service, mình sử dụng lệnh scp để gửi file service vào server. 
+                Các bạn hoàn toàn có thể tạo ra file service ngay trong server, sử dụng một số text editor như nano, vi để cấu hình thông tin.</p>
+
+            <div class="row justify-content-center text-center">
+                <figure class="figure w-100">
+                    <img src="assets/img/deploy/service-scp.png"
+                        class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption">Gửi file service tới server</figcaption>
+                </figure>
+            </div>
+
+
+            <p class="mb-1">Sau khi đã có file service, thực thi câu lệnh sau: </p>
+
+            <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:fit-content;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;margin: 0 auto;">
+                <pre style="margin: 0; line-height: 125%">sudo systemctl start deploy-demo.service
+</pre></div>
+
+<p class="mb-1">Mặc định thì các service trong linux không được tự động bật khi start hệ điều hành. 
+    Để làm điều đó thì cần phải enable service: </p>
+
+        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:fit-content;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;margin: 0 auto;">
+            <pre style="margin: 0; line-height: 125%">sudo systemctl enable deploy-demo.service</pre></div>
+
+
+<p class="mb-1">Sau khi đã khởi động service, có thể kiểm tra trạng thái thông qua câu lệnh sau: </p>
+
+
+
+ <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:fit-content;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;margin: 0 auto;">
+    <pre style="margin: 0; line-height: 125%">sudo systemctl status deploy-demo.service</pre></div>
+    
+    <p class="mb-1">Nếu như service trả về status là active tức là đã chạy thành công.</p>
+
+    <div class="row justify-content-center text-center">
+        <figure class="figure w-100">
+            <img src="assets/img/deploy/service-status.png"
+                class="figure-img img-fluid rounded" alt="...">
+                <figcaption class="figure-caption">Trạng thái của service</figcaption>
+        </figure>
+    </div>
+
+    <p>Cuối cùng, truy cập địa chỉ ứng dụng hoặc sử dụng lệnh curl để kiểm tra ứng dụng đã chạy thành công hay chưa.</p>
+
+    <h2 id="section7">7. Cập nhật ứng dụng trong server</h2>
+
+    <p class="mb-2">Việc cập nhật chương trình trong quá trình sử dụng là tất yếu, để cập nhật lại ứng dụng, các bạn thực hiện lại các thao tác: </p>
+
+    <ol class="ml-5 mb-3 text-warning" style="color: unset;">
+        <li>Đóng gói lại ứng dụng sau khi đã cập nhật.</li>
+        <li>Dùng lệnh scp gửi file vào trong service.</li>
+        <li>Sử dụng lệnh "sudo systemctl restart {service-name}" để khởi động lại service.</li>
+        <li>Chạy thêm lệnh "sudo systemctl deamon-reloaded" nếu hệ thống báo yêu cầu.</li>
+    </ol>
+
+    <p>Sau các thao tác trên, ứng dụng trong server sẽ được cập nhật lại.</p>
+             
+        <h2>Kết luận</h2>
+        <p>Như vậy, mình đã mô tả lại quá trình mình thực hiện deploy ứng dụng Spring Boot với MySQL trên Linux server. Có thể thấy, việc deploy cũng khá đơn giản, tuy nhiên nếu có sự thay đổi từ ứng dụng thì việc repdeploy khá mất công. Vì vậy, trong thời gian sắp tới mình sẽ ra thêm một bài viết nói về quá trình deploy một cách tự động với CI/CD.</p>
+        
+        
+        <p style="font-style: italic;">Hẹn gặp lại mọi người trong các bài viết sắp tới!</p>
+
+            <!-- About Author -->
+            <div class="blog-post-author mt-100 d-flex">
+                <div class="author-thumbnail">
+                    <img src="assets/img/core-img/logo.png" alt="">
+                </div>
+                <div class="author-info">
+                    <div class="line"></div>
+                    <span class="author-role">Author</span>
+                    <h4><a href="#" class="author-name">Long Nguyen</h4>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- ##### Single Blog Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area text-center border-top bg-light">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12 ">
+
+                    <!-- Footer Nav Area -->
+                    <div class="classy-nav-container breakpoint-off bg-light">
+                        <!-- Classy Menu -->
+                        <nav class="classy-navbar justify-content-center">
+
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
+                            </div>
+
+                            <!-- Menu -->
+                            <div class="classy-menu">
+
+                                <!-- close btn -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Me</a></li>
+
+                                    </ul>
+                                </div>
+                                <!-- Nav End -->
+                            </div>
+                        </nav>
+                    </div>
+
+                    <!-- Footer Social Area -->
+                    <div class="footer-social-area mt-30">
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
+                                class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Github"><i class="fa fa-github"
+                                aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i
+                                class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;
+        <script>document.write(new Date().getFullYear());</script> All rights reserved |
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="/assets/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="/assets/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="/assets/js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="/assets/js/active.js"></script>
+</body>
+
+</html>
